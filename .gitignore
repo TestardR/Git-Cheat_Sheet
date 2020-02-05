@@ -1,13 +1,30 @@
 # Git cheat sheet
 
-git init <optional-name-of-folder>
+git init <optional-folder>
 git status
 
 git add <file>
-git add .
 git commit -m "<message>"
-git commit -am "<message>"
-
 
 git clone <file-path>
 
+# Recursive Add
+git add .
+
+# if your file is tracked you can use the following
+git ls-files
+git commit -am "<message>"
+
+# Unstage changes
+get reset HEAD <file>
+
+# Discard changes
+git checkout -- <file>
+
+# Rename and move files
+# Rename
+git mv <current-file> <new-file>
+# Move file
+git mv <file> <folder>
+# if you use the bash command, you then have recursively and looking for name changes add
+git add -A 
