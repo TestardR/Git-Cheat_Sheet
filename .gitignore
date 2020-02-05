@@ -28,3 +28,9 @@ git mv <current-file> <new-file>
 git mv <file> <folder>
 # if you use the bash command, you then have recursively and looking for name changes add
 git add -A 
+# update the index (working tree), add no files
+git add -u
+
+# Deleting files
+rm <file>
+# if tracked
