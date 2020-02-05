@@ -34,3 +34,5 @@ git add -u
 # Deleting files
 rm <file>
 # if tracked
+git ls-files
+git rm <file>
