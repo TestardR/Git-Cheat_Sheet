@@ -36,3 +36,7 @@ rm <file>
 # if tracked
 git ls-files
 git rm <file>
+
+# to undelete a file
+git rm <file>   
+git checkout -- <file>
