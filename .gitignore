@@ -40,3 +40,25 @@ git rm <file>
 # to undelete a file
 git rm <file>   
 git checkout -- <file>
+
+# what if you deleted not using git
+rm <file>
+# to stage your deletation
+git add -A 
+
+# history
+git log
+git log --abbrev-commit
+git log --oneline --graph --decorate
+git log <commit>...<commit> 
+git log --since="3 days ago"
+git log -- <file>
+git show <commit>
+
+# alias
+# git hist
+git config --global alias.hist "log --all --graph --decorate --oneline"
+aliases are in ~/gitconfig
+
+# exclude unwanted files
+.gitignore
