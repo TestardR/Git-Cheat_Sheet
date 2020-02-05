@@ -1,5 +1,6 @@
 # Git cheat sheet
 
+# Basic commands
 git init <optional-folder>
 git status
 
@@ -62,3 +63,34 @@ aliases are in ~/gitconfig
 
 # exclude unwanted files
 .gitignore
+# specific file
+file.txt
+# file pattern
+*.txt
+# folder
+my-folder/
+
+# Comparing Working Directory and the Staging Area 
+git diff
+# To visually see changes
+git difftool
+
+# Comparing Working Directory and Git Repository (Last Commit)
+git diff HEAD
+git difftool HEAD
+
+# Comparing between the Staging Area and the Git Repository (Last Commit)
+git diff --staged HEAD
+git difftool --staged HEAD
+
+# Limiting Comparsons to one File (or path)
+git diff -- <file>
+
+# Comparing Between Commits
+git diff <commit> HEAD
+git diff <commit> <commit>
+git diff HEAD HEAD^1
+
+# Comparing Between Local and Remote Master Branches
+# local master and master branch on github
+git diff master origin/master
