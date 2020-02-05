@@ -1,2 +1,4 @@
 # Git cheat sheet
 
+git init <optional-name-of-folder>
+git status
