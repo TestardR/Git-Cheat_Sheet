@@ -2,3 +2,12 @@
 
 git init <optional-name-of-folder>
 git status
+
+git add <file>
+git add .
+git commit -m "<message>"
+git commit -am "<message>"
+
+
+git clone <file-path>
+
