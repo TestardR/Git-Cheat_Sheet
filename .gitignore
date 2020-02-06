@@ -186,5 +186,11 @@ git tag --delete <tag>
 # Annotated Tag
 git tag -a <version>
 # git tag -a v-1.0
-
-# Comparing Tags !
+git tag <version> -m <commit-message>
+# comparing
+git diff tag tag
+git difftool tag tag
+# tagging a specific commit
+git tag -a <tag> <commit-id>
+# update tag
+git tag -a <tag> -f <commit-id>
