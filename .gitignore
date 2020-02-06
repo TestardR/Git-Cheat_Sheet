@@ -132,3 +132,42 @@ git rebase master
 # git pull = git fetch + git merge
 git fetch
 git pull --rebase origin master
+
+
+# Stashing
+# only work on tracked files
+git stash 
+# same as save by default
+git stash save
+# commit changes in btwn
+git commit -am "<msg>"
+# to apply work
+git stash apply
+# delete the stash
+git stash drop
+
+
+# to stash untracked files
+git stash -u
+
+# git stash apply + git stash drop
+git stash pop
+
+# Managing Multiples stashes
+git stash save "<msg>"
+# show a specific stash
+git stash show stash@{<num>}
+# apply a specific stash
+git stash apply stash@{<num>}
+# drop a specific stash
+git stash drop stash@{<num>}
+
+
+# see all stashes
+git stash list
+# drop all stashes
+git stash clear
+
+# Stashing into a Branch
+# create a branch, switch into a branch, apply the stash, and drop the stash
+git stash branch <name>
