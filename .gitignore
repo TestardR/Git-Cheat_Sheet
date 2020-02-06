@@ -194,3 +194,5 @@ git difftool tag tag
 git tag -a <tag> <commit-id>
 # update tag
 git tag -a <tag> -f <commit-id>
+# push one tag
+git push origin <tag>
