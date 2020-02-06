@@ -125,11 +125,10 @@ git log --oneline --graph --decorate
 git merge <branch-name> -m "<your-message>"
 
 # Rebasing
-# Simple case
+# Simple case on the advanced branch from a divergent master
 git rebase master
-<<<<<<< HEAD
 
-# WOW
-=======
-# Test
->>>>>>> amazing commands again
+# Pull with rebase
+# git pull = git fetch + git merge
+git fetch
+git pull --rebase origin master
