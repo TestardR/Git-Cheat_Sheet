@@ -171,3 +171,20 @@ git stash clear
 # Stashing into a Branch
 # create a branch, switch into a branch, apply the stash, and drop the stash
 git stash branch <name>
+
+
+# Tagging
+# Simple tag / Lightwieght Tags
+git tag <tag>
+# See tags
+git tag --list
+# See a tag
+git show <tag>
+# Delete a tag
+git tag --delete <tag>
+
+# Annotated Tag
+git tag -a <version>
+# git tag -a v-1.0
+
+# Comparing Tags !
