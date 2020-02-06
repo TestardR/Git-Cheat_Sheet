@@ -127,3 +127,5 @@ git merge <branch-name> -m "<your-message>"
 # Rebasing
 # Simple case
 git rebase master
+
+# WOW
