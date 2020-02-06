@@ -113,9 +113,16 @@ git checkout -b <name>
 # before merging compare branches
 git diff master <branch-name>
 git difftool master title-chage
+
 # Going back to the main branch and merge
 # Fast Forward Merge
 git checkout master
 git merge <branch-name>
+
 # Disable Fast Forward Merge
 git merge <branch-name> --no-ff
+# Check your work
+git log --oneline --graph --decorate
+
+# Automatic Merge
+git merge <branch-name> -m "<your-message>"
