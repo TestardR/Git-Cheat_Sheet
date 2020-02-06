@@ -188,11 +188,15 @@ git tag -a <version>
 # git tag -a v-1.0
 git tag <version> -m <commit-message>
 # comparing
-git diff tag tag
-git difftool tag tag
+git diff <tag> <tag>
+git difftool <tag> <tag>
 # tagging a specific commit
 git tag -a <tag> <commit-id>
 # update tag
 git tag -a <tag> -f <commit-id>
 # push one tag
 git push origin <tag>
+# sync tags with githug
+git push origin master --tags
+# delete the content of a pushed tag
+git push origin :<tag>
