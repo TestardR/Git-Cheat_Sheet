@@ -107,9 +107,15 @@ git branch -m <old-name> <new-name>
 # delete a branch 
 git branch -d <name>
 
-# Happy Path / Fast Forward Merges
+# Merges 
 # create a branch and switch to it
 git checkout -b <name>
 # before merging compare branches
 git diff master <branch-name>
 git difftool master title-chage
+# Going back to the main branch and merge
+# Fast Forward Merge
+git checkout master
+git merge <branch-name>
+# Disable Fast Forward Merge
+git merge <branch-name> --no-ff
