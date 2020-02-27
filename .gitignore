@@ -205,3 +205,30 @@ git push origin <tag>
 git push origin master --tags
 # delete the content of a pushed tag
 git push origin :<tag>
+
+# .git/config example
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = git@bitbucket.org:opensense/matrix-react-sdk.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "release/space-public"]
+	remote = origin
+	merge = refs/heads/release/space-public
+[branch "upgrade/2.0"]
+	remote = origin
+	merge = refs/heads/upgrade/2.0.0
+[remote "matrix-org"]
+	url = https://github.com/matrix-org/matrix-react-sdk.git
+	fetch = +refs/heads/*:refs/remotes/matrix-org/*
+	fetch = +refs/tags/*:refs/rtags/matrix-org/*
+	tagopt = --no-tags
+	pushurl = no_push
