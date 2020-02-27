@@ -86,6 +86,7 @@ git difftool --staged HEAD
 # Comparing between a file on a remote tag with a local fil
 # the refs folder lies inside .git/
 git diff refs/rtags/matrix-org/v1.7.4 refs/heads/master --  ./src/components/structures/auth/Login.js
+git diff refs/rtags/matrix-org/v1.7.4 refs/rtags/matrix-org/v2.1.1 -- src/components/structures/RoomDirectory.js
 git diff <remote> <local> -- <file-path>
 
 # Limiting Comparsons to one File (or path)
